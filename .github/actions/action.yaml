@@ -1,0 +1,9 @@
+name: "Filename checker"
+author: "Love Lyckaro"
+description: "Uses regex to make sure that all exams have correct filenames"
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/script.sh
+      shell: bash
+      working-directory: ./
